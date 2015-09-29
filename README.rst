@@ -23,7 +23,7 @@ Installation
 
 1. Add ``FpdfBundle`` in your project
 
-    * Via composer
+    * Via composer (TODO packagist)
     
         Add the bundle in your ``composer.json``
         
@@ -34,6 +34,16 @@ Installation
                 "open-wide/fpdf-bundle": "dev-master"
               }
             }
+
+
+    * Via a submodule
+    
+        .. code-block:: bash
+        
+            mkdir -p src/OpenWide
+            git submodule add https://github.com/Open-Wide/OwFpdfBundle.git src/OpenWide/FpdfBundle
+
+
 
 2. Enable the Bundle in your ``EzPublishKernel.php`` file:
 
