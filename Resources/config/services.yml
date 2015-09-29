@@ -1,0 +1,6 @@
+parameters:
+    ow_fpdf.fpdf.class: Ow\Bundle\FpdfBundle\FPDF\Fpdf
+
+services:
+    ow_fpdf.fpdf:
+        class: %ow_fpdf.fpdf.class%
