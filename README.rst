@@ -12,6 +12,7 @@ Presentation
 ============
 
 [FPDF] http://fpdf.org/
+
 This bundle provides a complete system to create and display PDF. 
 
 Other features include user's choice of unit of measure, page format and margins; header and footer management; automatic page and line breaks and text justification; JPEG and PNG image support; and TrueType, Type1 and encoding support.
@@ -60,9 +61,13 @@ Example
 =======
 
 $pdf = $this->container->get('ow_fpdf.fpdf');
+
 $pdf->AddPage();
+
 $pdf->SetFont('Arial','B',16);
+
 $pdf->Cell(40,10,'Hello World !');
+
 $pdf->Output();
 
 
